@@ -367,7 +367,9 @@ opacity: 1;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   }
 }
-
+#clone {
+display: flex;
+}
 #shadow-clone  {
 animation-name: shadow-clone;
 animation-duration: 3s;
