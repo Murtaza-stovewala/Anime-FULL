@@ -191,6 +191,7 @@ h1, h2 {
 
 .gallery {
   margin: 10px;
+  display: flex;
 }
 
  .image {
