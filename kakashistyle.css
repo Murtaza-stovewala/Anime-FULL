@@ -345,7 +345,7 @@ blockquote {
   }
 #teleportations {
   margin-top: 2%;
- display:flex
+ display:flex;
  align-content: center;
     
 
@@ -426,7 +426,7 @@ blockquote {
 
 #kamuis {
     margin-top: 2%;
-   display:flex
+   display:flex;
     align-content: center;
 }
 #shadow-clone  {
