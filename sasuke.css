@@ -174,8 +174,9 @@ animation: gallery-appearance 2s ease-in-out forwards;
   justify-content: center;
 }
 
-.gallery{
+.gallery {
   margin: 10px;
+  display: flex;
 }
 
 .image {
