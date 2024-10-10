@@ -1,0 +1,155 @@
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    right: 0; 
+    color: white;
+}
+h3 {
+    text-transform: capitalize;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+p {
+    font-family: cursive;
+}
+.about {
+    background-color: black;
+    
+    width: 25%;
+    height: 100vh;
+    border: white solid 0.1vw;
+    padding-left: 1vw;
+    z-index: 2;
+}
+
+
+#naruto {
+    transition: all 1s linear ;  
+  display: flex;
+  flex-direction: column;
+   
+}
+
+a {
+    display: inline;
+}
+
+
+#naruto:hover {
+    background-color: yellow;
+    color: black;
+    
+   #photo {
+        height: 70%;
+        width: 100%;
+        background-image: url(naruto.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+     
+        transition: all 1s linear 2s ;
+    }
+    font-size: large;
+    #logo {
+        position: relative;
+        left: 1.5%;
+        top: 70%;
+        display: inline;
+        background-image: url(logo.png);
+        height: 50px;
+        transform: rotate(360deg);
+    }
+}
+
+#sasuke {
+    transition: all 1s linear ;  
+}
+#sasuke:hover {
+    background-color: #0E86CC;
+    color: black;
+   #photo2 {
+        height: 70%;
+        width: 100%;
+        background-image: url(sassuke.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 1s linear 2s ;
+    }
+    font-size: large;
+    #logo {
+        position: relative;
+        top: 70%;
+        left: 0.5%;
+        background-image: url(logo.png);
+        height: 50px;
+    }
+}
+#Kakashi {
+    transition: all 1s linear ;  
+}
+#Kakashi:hover {
+    background-color: green;
+    color: black;
+   #photo3 {
+        height: 70%;
+        width: 100%;
+        background-image: url(kakashi.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 1s linear 2s ;
+    }
+    font-size: large;
+    #logo {
+        position: relative;
+        left: 1.5%;
+        top: 70%;
+        display: inline;
+        background-image: url(logo.png);
+        height: 50px;
+    }
+}
+#Itachi {
+    transition: all 1s linear ;  
+}
+#Itachi:hover {
+    background-color: #870001;
+    color: black;
+   #photo4{
+        height: 67%;
+        width: 90%;
+        left: 20%;
+        background-image: url(Itachi.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 1s linear 2s ;
+    }
+    font-size: large;
+ #logo1 {
+        position: relative;
+        left: 2.5%;
+        top: 70%;
+        display: inline;
+        background-image: url(logo1.png);
+        height: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about {
+        background-color: black;
+        
+        width: 100%;
+        height: 100%;
+        border: white solid 0.1vw;
+        /* padding-left: 1vw; */
+        display: inline-block;
+    }
+}

@@ -1,0 +1,636 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+
+
+/* Header Styles */
+header {
+  background-color:  yellow;
+  color: black;
+  padding: 1em;
+  text-align: center;
+}
+
+.header {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+#a {
+color: black;
+}
+#a:hover {
+color: red;
+}
+
+
+/* Main saction*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+
+section {
+  background-color: #fff;
+  padding: 2em;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+h1, h2 {
+  color: #337ab7;
+}
+
+/* Home Section Styles */
+#home {
+  text-align: center;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  animation: home-appearance 2s ease-in-out forwards;
+}
+#home h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+#learnmore {
+  color: #333;
+  }
+#learnmore:hover {
+  background-color: #444;
+  color: white;
+}
+@keyframes home-appearance {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+#photo {
+  width: 150px;
+  height:250px;
+background-image: url(naruto.png);
+background-size: cover;
+background-repeat: no-repeat;
+animation: naruto-appearance 2s ease-in-out forwards;
+
+}
+
+@keyframes naruto-appearance {
+  0% {
+      opacity: 0;
+      transform: scale(0.5);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+#photo:hover{
+  width: 175px;
+  height: 291px;
+}
+
+
+/* About Section Styles */
+#about {
+background-color: #fff;
+animation: about-appearance 2s ease-in-out forwards;
+}
+#about ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#about li {
+  margin-bottom: 10px;
+}
+
+blockquote {
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 20px;
+}
+@keyframes about-appearance {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Gallery Section Styles */
+#gallery {
+background-color: #fff;
+animation: gallery-appearance 2s ease-in-out forwards;
+}
+@keyframes gallery-appearance {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#gallery1 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery {
+  margin: 10px;
+}
+
+.image {
+  width: 200px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.image:hover {
+transform: scale(1.1); 
+}
+
+#image1:hover {
+  width: 640px;/*ratio of w:h is 8:5 */
+    height: 400px;
+    z-index: 2;
+  }
+
+#image2:hover {
+  width: 640px;/*ratio of w:h is 8:5 */
+  height: 400px;
+  z-index: 2;
+}
+
+#image3:hover {
+  width: 640px;/*ratio of w:h is 8:5 */
+  height: 400px;
+  z-index: 2;
+}
+
+
+.gallery  {
+opacity: 0;
+animation: fadeIn 1s ease-in-out forwards;
+animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+/* Animation Section  */
+
+#animations{
+display: flex;
+width: 95%;
+flex-direction: column;
+text-align: center;
+align-content: center;
+background-color: #fff;
+
+animation: animation-appearance 2s ease-in-out forwards;
+}
+.animation  {
+
+  margin-top: 10%;
+}
+
+
+
+.animation img {
+
+  object-fit: cover;
+  border-radius: 50%;
+  width: 350px;
+
+}
+
+@keyframes animation-appearance {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#rasengan1 {
+  
+  margin-top: 0;
+}
+#rasengan2 {
+animation-name: rasengan2;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+@keyframes rasengan2 {
+
+0% {
+transform: scale(0.5);
+opacity: 0;
+}
+50% {
+transform: scale(1.2);
+opacity: 1;
+}
+100% {
+transform: scale(1);
+opacity: 1;
+}
+}
+#rasengan {
+  animation-name: rasengan;
+  animation-duration: 4s;
+  animation-timing-function:  ease-in-out;
+  animation-iteration-count: infinite;
+  width: 350px;
+  height: 200px;
+  margin-top: 0;
+}
+
+@keyframes rasengan {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+    filter: brightness(0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  10% {
+    transform: scale(0.8);
+    opacity: 0.5;
+    filter: brightness(0.7);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  }
+  20% {
+    transform: scale(1);
+    opacity: 1;
+    filter: brightness(1);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
+  }
+  30% {
+    transform: scale(1.2);
+    opacity: 1;
+    filter: brightness(1.2);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 1);
+  }
+  40% {
+    transform: scale(1.4);
+    opacity: 1;
+    filter: brightness(1.4);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 1);
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: 1;
+    filter: brightness(1.5);
+    box-shadow: 0 0 60px rgba(255, 255, 255, 1);
+  }
+  60% {
+    transform: scale(1.4);
+    opacity: 1;
+    filter: brightness(1.4);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 1);
+  }
+  70% {
+    transform: scale(1.2);
+    opacity: 1;
+    filter: brightness(1.2);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 1);
+  }
+  80% {
+    transform: scale(1);
+    opacity: 1;
+    filter: brightness(1);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
+  }
+  90% {
+    transform: scale(0.8);
+    opacity: 0.5;
+    filter: brightness(0.7);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0;
+    filter: brightness(0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+}
+
+#shadow-clone  {
+animation-name: shadow-clone;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+z-index: 2;
+}
+
+@keyframes shadow-clone {
+0% {
+transform: translateX(0);
+opacity: 0;
+}
+50% {
+transform: translateX(0);
+opacity: 1;
+}
+100% {
+transform: translateX(0);
+opacity: 0;
+}
+}
+#shadow-clone1 {
+animation-name: shadow-clone1;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+z-index: 1;
+}
+#shadow-clone2 {
+animation-name: shadow-clone2;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+z-index: 1;
+}
+@keyframes shadow-clone2 {
+0% {
+transform: translateX(-105%);
+opacity: 0;
+}
+50% {
+transform: translateX(0);
+opacity: 1;
+}
+100% {
+transform: translateX(-105%);
+opacity: 0;
+}
+}
+
+@keyframes shadow-clone1 {
+0% {
+transform: translateX(105%);
+opacity: 0;
+}
+50% {
+transform: translateX(0);
+opacity: 1;
+}
+100% {
+transform: translateX(105%);
+opacity: 0;
+}
+}
+
+
+
+
+/* #wind-effect {
+animation-name: wind-effect;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+}
+@keyframes wind-effect {
+0% {
+transform: translate(-70px,-30px);
+}
+6.25% {
+transform: translate(-50px,30px );
+}
+12.5% {
+transform: translate(-30px,-30px) ;
+}
+18.75% {
+transform: translate(-10px,30px) ;
+}
+25% {
+transform: translate(10px,-30px)
+}
+31.25% {
+transform: translate(30px,30px);
+}
+37.5% {
+transform: translate(50px,-30px);
+}
+43.75% {
+transform: translate(70px,30px);
+}
+50% {
+transform: translate(70px,30px) ;
+
+}
+56.25% {
+transform: translate(50px,-30px);
+
+}
+62.5% {
+transform: translate(30px,30px);
+
+}
+68.75% {
+transform: translate(10px,-30px);
+
+}
+75% {
+transform: translate(-10px,30px);
+
+}
+81.25% {
+transform: translate(-30px,-30px);
+
+}
+87.5% {
+transform: translate(-50px,30px);
+
+}
+93.75% {
+transform: translate(-70px,-30px);
+
+} 
+100% {
+transform: translate(-70px,-30px);
+}
+} */
+
+
+
+
+
+#ninja-run {
+  animation-name: ninja-run;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  }
+@keyframes ninja-run {
+0% {
+transform: translateX(0);
+}
+50% {
+transform: translateX(50px);
+}
+100% {
+transform: translateX(0);
+}
+}
+#tailed-beast-bomb {
+  animation-name: explosion;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+}
+
+@keyframes explosion {
+  0% {
+    transform: scale(1);
+    filter: brightness(1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  10% {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.7); /* golden color */
+  }
+  20% {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.9);
+  }
+  30% {
+    transform: scale(1.5);
+    filter: brightness(1.5);
+    box-shadow: 0 0 40px rgba(255, 215, 0, 1);
+  }
+  40% {
+    transform: scale(1.7);
+    filter: brightness(2);
+    box-shadow: 0 0 50px rgba(255, 215, 0, 1);
+  }
+  50% {
+    transform: scale(1.9);
+    filter: brightness(2.5);
+    box-shadow: 0 0 60px rgba(255, 215, 0, 1);
+  }
+  60% {
+    transform: scale(2);
+    filter: brightness(3);
+    box-shadow: 0 0 70px rgba(255, 215, 0, 1);
+  }
+  70% {
+    transform: scale(1.9);
+    filter: brightness(2.5);
+    box-shadow: 0 0 60px rgba(255, 215, 0, 1);
+  }
+  80% {
+    transform: scale(1.7);
+    filter: brightness(2);
+    box-shadow: 0 0 50px rgba(255, 215, 0, 1);
+  }
+  90% {
+    transform: scale(1.5);
+    filter: brightness(1.5);
+    box-shadow: 0 0 40px rgba(255, 215, 0, 1);
+  }
+  100% {
+    transform: scale(1);
+    filter: brightness(1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+}
+
+
+
+/* footer  */
+footer {
+background-color: yellow;
+color: black;
+padding: 1em;
+text-align: center;
+}
+
+footer ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: space-evenly;
+}
+
+footer li {
+margin-right: 20px;
+}
+
+footer a {
+text-decoration: none;
+color: #337ab7;
+}
+
+footer a:hover {
+color: #23527c;
+}
+.footer{
+color: black;
+text-transform: uppercase;
+font-family:Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+#home1 {
+color: red;
+}
+#sasuke1:hover {
+color: blue;
+}
+#kakashi1:hover {
+color: green;
+}
+#gara1:hover {
+color: brown;
+}
