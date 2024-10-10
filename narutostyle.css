@@ -179,6 +179,7 @@ animation: gallery-appearance 2s ease-in-out forwards;
 
 .gallery {
   margin: 10px;
+  display: flex;
 }
 
 .image {
@@ -268,26 +269,6 @@ animation: animation-appearance 2s ease-in-out forwards;
 #rasengan1 {
   
   margin-top: 0;
-}
-#rasengan2 {
-animation-name: rasengan2;
-animation-duration: 5s;
-animation-iteration-count: infinite;
-}
-@keyframes rasengan2 {
-
-0% {
-transform: scale(0.5);
-opacity: 0;
-}
-50% {
-transform: scale(1.2);
-opacity: 1;
-}
-100% {
-transform: scale(1);
-opacity: 1;
-}
 }
 #rasengan {
   animation-name: rasengan;
