@@ -351,6 +351,7 @@ animation: animation-appearance 2s ease-in-out forwards;
 #clone {
 display: flex;
 flex-direction: center;
+align-content: center;
 width: 95em;
 }
 #shadow-clone  {
