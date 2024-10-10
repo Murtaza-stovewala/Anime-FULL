@@ -345,6 +345,7 @@ blockquote {
   }
 #teleportations {
   margin-top: 2%;
+display:flex
 
 }
   #teleportation {
