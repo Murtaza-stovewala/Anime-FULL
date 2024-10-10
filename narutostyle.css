@@ -369,6 +369,7 @@ opacity: 1;
 }
 #clone {
 display: flex;
+flex-wrap: wrap;
 }
 #shadow-clone  {
 animation-name: shadow-clone;
