@@ -168,9 +168,9 @@ blockquote {
     flex-wrap: wrap;
     justify-content: center;
 }
-
-.gallery  {
-    margin: 10px;
+.gallery {
+  margin: 10px;
+  display: flex;
 }
 
  .image {
