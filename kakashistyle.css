@@ -166,7 +166,7 @@ blockquote {
     margin: 0;
     display: flex;
     flex-wrap: wrap,wrap-reverse;
-    justify-content: center;
+    justify-content: space-between;
 }
 .gallery {
   margin: 10px;
