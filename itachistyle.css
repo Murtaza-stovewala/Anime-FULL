@@ -185,13 +185,12 @@ h1, h2 {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap,wrap-reverse;
   justify-content: center;
 }
 
 .gallery {
   margin: 10px;
-  display: flex;
 }
 
  .image {
@@ -200,6 +199,7 @@ h1, h2 {
   object-fit: cover;
   border-radius: 10px;
   transition: transform 1s ease-in-out;
+  z-index: 1;
 }
 .image:hover {
   transform: scale(1.1); 
@@ -207,8 +207,8 @@ h1, h2 {
 
 
   #image1:hover {
-    width: 760px;/*ratio of w:h is 4.0:2.1 */
-    height: 399px;
+    width: 660px;/*ratio of w:h is 4.0:2.1 */
+    height: 346px;
     z-index: 2;
     }
   
@@ -219,8 +219,8 @@ h1, h2 {
   }
   
   #image3:hover {
-    width: 640px;/*ratio of w:h is 16:9 */
-    height: 360px;
+    width: 660px;/*ratio of w:h is 16:9 */
+    height: 372px;
     z-index: 2;
   }
   
