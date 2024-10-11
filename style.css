@@ -8,7 +8,18 @@ main {
     left: 0;
     right: 0; 
     color: white;
+    animation: appearance 3s ease-in-out forwards;
 }
+@keyframes appearance {
+    0% {
+      opacity: 0;
+      transform: scale(100);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 h3 {
     text-transform: capitalize;
     font-family:Arial, Helvetica, sans-serif;
@@ -25,6 +36,7 @@ p {
     border: white solid 0.1vw;
     padding-left: 1vw;
     z-index: 2;
+    transition: transform 3s ease-in;
 }
 
 
@@ -32,6 +44,7 @@ p {
     transition: all 1s linear ;  
   display: flex;
   flex-direction: column;
+  
    
 }
 
